@@ -1,6 +1,8 @@
 <?php
 
 $sql = <<< SQL
+DROP TABLE IF EXISTS phone_numbers;
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE `users` (
 `id`         INT(11) NOT NULL AUTO_INCREMENT,
