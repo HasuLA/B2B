@@ -39,8 +39,8 @@ function load_users_data(?string $user_ids) : array
 // Как правило, в $_GET['user_ids'] должна приходить строка
 // с номерами пользователей через запятую, например: 1,2,17,48
 
-//$user_ids = $_GET['user_ids'];
-$user_ids = '19,2,3,4,5,6,0, 2,wtf,';
+$user_ids = $_GET['user_ids'];
+//$user_ids = '19,2,3,4,5,6,0, 2, qwerty';
 $data = load_users_data($user_ids);
 foreach ($data as $user_id => $name) {
     // Оборачиваем все, что мы не контроллируем, в htmlentities, чтобы не было сюрпризов.
